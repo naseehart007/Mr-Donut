@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dough-Nut Bites</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <div class="logo">
+        <img src="assets/LOGO DOUGH-NUT.png" alt="Dough-Nut Logo">
+        <span>DOUGH-NUT BITES</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#">MERCHANDISE</a>
+      <a href="about_us.html">ABOUT US</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="#menu">MENU</a>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-img">
+      <img src="assets\BOX.jpg" alt="Doughnut Box">
+    </div>
+    <div class="hero-text">
+      <div class="centered-block">
+        <h2 style="font-family: 'Lilita One', regular;">Make It Personal. Make It Delicious. Customize Your Dough-Nut
+          Box Now</h2>
+        <button id="custom-btn" style="font-family: 'Lilita One', regular;">Customise Now</button>
+      </div>
+    </div>
+  </section>
+  <img class="green-shape" src="assets/shapes.png" alt="Green Shape">
+  <img class="blue-shape" src="assets/shapes - Copy.png" alt="Green Shape">
+  <img class="red-heart" src="assets/shapes - Copy (2).png" alt="Green Shape">
+  <div class="bg">
+    <div class="semi-circle">
+      <section class="menu-section" id="menu">
+         <svg viewBox="0 0 300 150" width="300" height="150" style="display: block; margin: auto;">
+         <path id="semiPath" d="M 20 180 A 130 130 0 0 1 280 180" fill="none" />
+            <text fill="#006d42" font-family="'Lilita One', cursive" font-weight="bold" font-size="36">
+               <textPath href="#semiPath" startOffset="50%" text-anchor="middle">
+                  MENU
+               </textPath>
+            </text>
+         </svg>
+        <div class="menu-container">
+          <!-- Dietary Filters -->
+          <div class="filters">
+            <h3 style="display: block; text-align: center;">Dietary</h3>
+            <label><input type="checkbox" class="filter" value="vegan"> Vegan</label>
+            <label><input type="checkbox" class="filter" value="eggless"> Eggless</label>
+            <label><input type="checkbox" class="filter" value="lactose"> Lactose Intolerant</label>
+            <label><input type="checkbox" class="filter" value="gluten"> Gluten Free</label>
+            <label><input type="checkbox" class="filter" value="sugarfree"> Sugar Free</label>
+            <h3 style="display: block; text-align: center;">Flavour</h3>
+            <label><input type="checkbox" class="filter" value="classic"> Classic</label>
+            <label><input type="checkbox" class="filter" value="chocolate"> Chocolate</label>
+            <label><input type="checkbox" class="filter" value="fruit"> Fruit</label>
+            <label><input type="checkbox" class="filter" value="nutty"> Nutty</label>
+            <label><input type="checkbox" class="filter" value="savoury"> Savoury</label>
+          </div>
+          <!-- Donut Items -->
+          <div class="menu-items">
+            <div class="menu-card" data-tags="classic eggless">
+              <div class="item">
+                <img src="assets/glaze donut.png" alt="Glaze-Oh">
+              </div>
+              <div class="item-info">
+                <h4>GLAZE-OH</h4>
+                <p>A classic sugar-glazed Doughnut</p>
+                <span>$4.00</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="fruit vegan">
+              <div class="item">
+                <img src="assets/orange donut.png" alt="Mango Tango">
+              </div>
+              <div class="item-info">
+                <h4>MANGO TANGO</h4>
+                <p>A fluffy doughnut with a sweet, tangy mango glaze</p>
+                <span>$4.50</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="savoury eggless">
+              <div class="item">
+                <img src="assets/jalapeno donut.png" alt="Jalapeno">
+              </div>
+              <div class="item-info">
+                <h4>JALAPENO</h4>
+                <p>A soft Doughnut with a spicy-sweet jalapeño kick.</p>
+                <span>$4.70</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="classic caramel eggless">
+              <div class="item">
+                <img src="assets/caramel.png" alt="Caramel Jack">
+              </div>
+              <div class="item-info">
+                <h4>CARAMEL JACK</h4>
+                <p>A soft Doughnut topped with rich, buttery caramel glaze</p>
+                <span>$4.50</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="nutty chocolate lactose">
+              <div class="item">
+                <img src="assets/chocie.png" alt="Coconut Bomb">
+              </div>
+              <div class="item-info">
+                <h4>COCONUT BOMB</h4>
+                <p>A coconut cream filled Doughnut topped with chocolate and crunchy nuts</p>
+                <span>$4.50</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="nutty chocolate eggless">
+              <div class="item">
+                <img src="assets/ewwwww.png" alt="Pistachio Bliss">
+              </div>
+              <div class="item-info">
+                <h4>PISTACHIO BLISS</h4>
+                <p>A soft Doughnut topped with chocolate sprinkles and pistachio cream</p>
+                <span>$4.50</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="fruit eggless">
+              <div class="item">
+                <img src="assets/hello kitty.png" alt="Hello Peachy">
+              </div>
+              <div class="item-info">
+                <h4>HELLO PEACHY</h4>
+                <p>A juicy peach filled Doughnut, topped with cream and sprinkles</p>
+                <span>$4.50</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="fruit classic vegan">
+              <div class="item">
+                <img src="assets/glaze dons.png" alt="Sunny Swirl">
+              </div>
+              <div class="item-info">
+                <h4>SUNNY SWIRL</h4>
+                <p>A soft Doughnut with a sweet citrus glaze and a touch of vanilla.</p>
+                <span>$4.50</span>
+              </div>
+            </div>
+            <div class="menu-card" data-tags="chocolate eggless">
+              <div class="item">
+                <img src="assets/chocolate doughnut.png" alt="Midnight Dream">
+              </div>
+              <div class="item-info">
+                <h4>MIDNIGHT DREAM</h4>
+                <p>A soft chocolate Doughnut with chocolate topping</p>
+                <span>$4.50</span>
+              </div>
+            </div>
+          </div>
+      </section>
+      <br>
+      <br>
+      <h3 style="display: flex; justify-content: center; text-align: center;">
+        Fathima Naseeha - 242031Q
+      </h3>
+      <!-- Footer -->
+      <footer class="footer">
+        <p>© 2025 Dough-Nut Bites — All Rights Reserved. <br>
+          Made with love & glaze 🍩
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+  <script>
+    // Select all filter checkboxes
+    const checkboxes = document.querySelectorAll('.filter');
+    // Select all menu cards (items)
+    const items = document.querySelectorAll('.menu-items .menu-card');
+
+    // For each checkbox, add a change event listener
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        // Get all checked checkboxes and extract their values into an array
+        let activeFilters = [...checkboxes]
+          .filter(c => c.checked)  // Keep only checked checkboxes
+          .map(c => c.value);      // Get the value attribute of each checked checkbox
+
+        // Loop through each menu item
+        items.forEach(item => {
+          // Get the tags of the item from the data-tags attribute, split into an array
+          let tags = item.getAttribute('data-tags').split(' ');
+
+          // If no filters are active, or the item's tags match at least one active filter,
+          // show the item by setting display to 'flex'
+          if (activeFilters.length === 0 || activeFilters.some(f => tags.includes(f))) {
+            item.style.display = 'flex';
+          } else {
+            // Otherwise, hide the item by setting display to 'none'
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</html>

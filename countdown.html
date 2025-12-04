@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<title>Countdown</title>
+<div class="hero-wrapper-countdown">
+   <div class="striped-bg">
+      <div class="overlay">
+         <div class="content">
+            <h2>DON'T MISS OUT</h2>
+            <h1>NEW FLAVOURS LAUCH</h1>
+            <p>Join Our Newsletter To Get Exclusive Updates From Us!</p>
+            <div class="countdown">
+               <div>
+                  <span id="days">00</span>
+                  <p>DAYS</p>
+               </div>
+               <div>
+                  <span id="hours">00</span>
+                  <p>HOURS</p>
+               </div>
+               <div>
+                  <span id="minutes">00</span>
+                  <p>MINUTES</p>
+               </div>
+               <div>
+                  <span id="seconds">00</span>
+                  <p>SECONDS</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="doughnut-section">
+         <img src="assets/matcha-removebg.png" alt="Matcha Doughnut" />
+         <div class="label">MATCHA DOUGHNUT</div>
+      </div>
+   </div>
+   <img src="assets/arc.png" alt="Arc image" class="arc">
+   <div class="arc-text" style="font-family: 'Lilita One', cursive;  font-size: 2.5rem;">You Dough-Nut want to miss this!</div>
+</div>
+<div style="background-color: #f6f6d8;">
+  <h3 style="display: flex; justify-content: center; text-align: center; margin-top: 80px;">
+    Fathima Naseeha - 242031Q
+  </h3>
+</div>
+<script>
+   const targetDate = new Date();
+   targetDate.setDate(targetDate.getDate() + 5);
+   targetDate.setHours(targetDate.getHours() + 17);
+   targetDate.setMinutes(targetDate.getMinutes() + 2);
+   targetDate.setSeconds(targetDate.getSeconds() + 25);
+   
+   function updateCountdown() {
+     const now = new Date().getTime();
+     const diff = targetDate - now;
+   
+     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+     const minutes = Math.floor((diff / (1000 * 60)) % 60);
+     const seconds = Math.floor((diff / 1000) % 60);
+   
+     document.getElementById("days").innerText = String(days).padStart(2, '0');
+     document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+     document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+     document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+   }
+   
+   setInterval(updateCountdown, 1000);
+   updateCountdown();
+</script>

@@ -1,0 +1,303 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 0;
+}
+
+.nav a {
+  font-family: 'Lilita One', cursive;
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #006d42;
+  font-weight: bold;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  color: #006d42;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.header {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f6f6d8;
+  height: 70px; 
+  padding: 0 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.header,
+.logo span {
+  font-family: 'Lilita One', regular;
+}
+
+.logo span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-family: 'Lilita One', regular;
+}
+
+.logo img {
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* <!-- different buttons leads to different section --> */
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a img.logo {
+  border: none;
+}
+
+li a {
+  color: #006D42;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 80px;
+  
+}
+
+/* <!-- body section --> */
+.body {
+  background-color: #FEC9D9;
+  color: #006D42;
+}
+
+.body p {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* <!-- hero section --> */
+.hero {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  flex-basis: 40%;
+  text-align: center;
+  font-size: 1.5rem
+}
+
+.h1 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hero-text p {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding-bottom: 1rem ;
+}
+
+.dohuthero {
+  width: 45%;
+  transform: translateY(70px);
+}
+
+button {
+  background-color: #006D42;
+}
+
+.heroimg {
+  width: 50%;
+  border-radius: 25px;
+  padding: 10px;
+  color: #006D42;
+}
+
+.heroimg a {
+  color: white;
+  font-size: 20px;
+  font-family: "Lilita One", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.heroimg:hover {
+  background-color: #006D42;
+  border-radius: 25px;
+  box-shadow: 13px 15px 25px -9px #006D42;
+}
+
+/* <!-- Semi-circle layout --> */
+.bg {
+  width: 100%;
+  background-color: #006D42;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+.semi-circle {
+  width: 100%;
+  background-color:#FDF4D5; 
+  border-radius: 26% 26% 0 0; 
+}
+
+/* <!-- Introduction of comapany [Doughnut Bites] --> */
+.semi-circle h2 {
+  text-align:center;
+  padding-top: 70px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+/* <!-- img layout in Doughnut Bites --> */
+.Dough-nut_Bites-content p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+.Welcome_text {
+  width: 50%;
+  padding-top: 1rem;
+}
+
+.Mission_text {
+  width: 80%;
+}
+
+.Bites-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  width: 60%;
+  padding: 5rem;
+  margin: 0 auto;
+}
+
+.MENU {
+  width: 25%;
+  box-shadow: 11px 10px 8px 0px rgba(0,0,0,0.4);
+}
+
+.donut_price{
+  width: 40%;
+  box-shadow: 11px 10px 8px 0px rgba(0,0,0,0.4);
+}
+
+.customize{
+  width: 40%;
+  box-shadow: 11px 10px 8px 0px rgba(0,0,0,0.4);
+}
+
+/* <!-- Origin --> */
+
+.origin_content{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.origin_content p{
+  font-size: 1.8rem;
+  width: 40%;
+  padding-top: 7rem;
+}
+
+.origin_img {
+  border-radius: 40%;
+  width: 30%;
+}
+
+/* <!-- Uniqueness --> */
+.uniqueness-first_section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding-top: 2rem;
+}
+
+.uniqueness-first_section p {
+  font-size: 1.8rem;
+  width: 40%;
+  padding-top: 7rem;
+}
+
+.uniqueness_flat {
+  border-radius: 70px 70px 70px 70px;
+  border: 26px solid #fec9d9;
+  width: 35%;
+  box-shadow: -8px 12px 28px -7px rgba(0,0,0,0.75);
+}
+
+.uniqueness_floating {
+  border-radius: 70px 70px 70px 70px;
+  border: 26px solid #fec9d9;
+  width: 35%;
+  box-shadow: -3px 15px 28px -7px rgba(0,0,0,0.75);
+}
+
+.uniqueness-second_section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  padding-top: 5rem;
+}
+
+.uniqueness-second_section p {
+  font-size: 1.8rem;
+  width: 40%;
+  padding-top: 7rem;
+}
+
+/* <!-- Footer --> */
+.footer_img {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/main style.css" />
+    <link rel="stylesheet" href="css/styles_index_top.css" />
+</head>
+
+<body class="FOM_section">
+
+    <div id="index-top-container"></div>
+
+    <img class="deco_img" src="img/deco.png" alt="">
+
+    <div class="FOM_div">
+
+        <div class="first_column">
+
+            <img class="phone" src="img/phone.png" alt="">
+
+            <div class="join_button_div">
+                <button class="join_button"><a href="#">JOIN NOW</a></button>
+            </div>
+
+        </div>
+
+        <div class="second_column">
+
+            <img class="voucher" src="img/voucher.png" alt="">
+
+            <button class="more_button"><a href="#">FIND OUT MORE</a></button>
+
+        </div>
+
+    </div>
+
+    <img class="another deco_img" src="img/deco.png" alt="">
+
+    <div id="countdown-container"></div>
+
+    <footer>
+        <p>© 2025 Dough-Nut Bites — All Rights Reserved. <br>
+          Made with love & glaze 🍩
+        </p>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    fetch('index_top.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('index-top-container').innerHTML = data;
+        })
+        .catch(err => console.error('Failed to load index_top.html:', err));
+
+    fetch('countdown.html')
+    .then(response => response.text())
+    .then(data => {
+        const container = document.getElementById('countdown-container');
+        container.innerHTML = data;
+
+        // Execute any script tags in the fetched HTML
+        container.querySelectorAll('script').forEach(oldScript => {
+            const newScript = document.createElement('script');
+            if (oldScript.src) {
+                newScript.src = oldScript.src;
+            } else {
+                newScript.textContent = oldScript.textContent;
+            }
+            document.body.appendChild(newScript);
+        });
+    })
+    .catch(err => console.error('Failed to load countdown.html:', err));
+</script>
